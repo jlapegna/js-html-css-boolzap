@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+
+
+/* LEFT COLUMN CSS */
+
+.app {
+  background-color: pink;
+  margin-top: 40px;
+  height: auto;
+}
+
+.user-column {
+  background-color: purple;
+  padding: 0;
+}
+
+.message-column {
+  background-color: red;
+  padding: 0;
+}
+
+.header {
+  background-color: #eee;
+  padding: 10px 16px;
+  height: 60px;
+}
+
+.header-searchbar {
+  background-color: #eee;
+  padding: 10px 16px;
+  height: 60px;
+}
+
+.contacts-list {
+  background-color: red;
+  padding: 0;
+}
+
+.contact {
+  border-style: dashed;
+  border-color: black;
+  border: 1;
+  height: 60px;
+}
+
+/* RIGHT COLUMN CSS */
+
+.message-screen {
+  min-height: 300px;
+}
+
+/* Media Q */
+
+@media screen (max-width: 768px;) {
+  .app {
+    margin-top: 0;
+  }
+ }
