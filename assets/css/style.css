@@ -1,19 +1,23 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
 }
 
 .container-fluid {
   background-color: lightgrey;
-  height: 100vh;
+  height: auto;
+}
+
+.padding-box {
+  padding: 15px 15px 15px 15px;
 }
 
 /* LEFT COLUMN CSS */
-
 .app {
+  display: flex;
   margin-top: 40px;
-  height: auto;
+  margin-bottom: 40px;
 }
 
 .user-column {
@@ -21,9 +25,9 @@
 }
 
 .header {
-  background-color: #eee;
+  background-color: #efefef;
   padding: 10px 16px;
-  height: 60px;
+  height: 72px;
 }
 
 .header-usericon i {
@@ -43,7 +47,6 @@
 }
 
 /* Notice Box CSS */
-
 .notice-box {
   background-color: #9de1fe;
   padding: 13px 12px 14px 13px;
@@ -83,31 +86,56 @@
   font-size: 48px;
 }
 
+.max-height {
+  max-height: 500px;
+  overflow: hidden;
+}
+
 .contact-name {
-  color: rgba(0,0,0,.6);
+  color: rgba(0, 0, 0, .6);
 }
 
 /* RIGHT COLUMN CSS */
-
 .message-screen {
-  min-height: 400px;
-  background-image: url(/img/whatsapp-chat-background.jpg);
+  min-height: 350px;
+  background-image: url(/Users/jolandalapegna/Documents/Boolean/projects/js-html-css-boolzap/img/whatsapp.jpg);
   background-size: cover;
+  border-left: 1px solid rgba(0, 0, 0, .08);
+}
+
+.message-field {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  padding: 9px 12px 11px;
+  margin: 5px 10px;
 }
 
 .message-header {
-  background-color: #eee;
+  height: 72px;
+  background-color: #efefef;
+  border-left: 1px solid rgba(0, 0, 0, .08);
 }
 
 .message-column {
   padding: 0;
   background-color: #eee;
+  min-height: 400px;
 }
 
-/* Media Q */
+.message-input {
+  height: 80px;
+  background-color: #e5ded3;
+}
 
-@media screen (max-width: 768px;) {
+.message-input i {
+  font-size: 32px;
+}
+
+
+/* Media Q */
+@media screen (max-width: 768px; ) {
   .app {
     margin-top: 0;
   }
- }
+}
