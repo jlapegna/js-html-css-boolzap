@@ -1,26 +1,22 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: lightgrey;
   font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
 }
 
+.container-fluid {
+  background-color: lightgrey;
+  height: 100vh;
+}
 
 /* LEFT COLUMN CSS */
 
 .app {
-  background-color: pink;
   margin-top: 40px;
   height: auto;
 }
 
 .user-column {
-  background-color: purple;
-  padding: 0;
-}
-
-.message-column {
-  background-color: red;
   padding: 0;
 }
 
@@ -30,28 +26,82 @@
   height: 60px;
 }
 
+.header-usericon i {
+  font-size: 42px;
+}
+
+.header-icons {
+  font-size: 22px;
+  padding: 5px 30px 10px 10px;
+  color: darkgrey;
+}
+
 .header-searchbar {
   background-color: #eee;
   padding: 10px 16px;
   height: 60px;
 }
 
-.contacts-list {
-  background-color: red;
-  padding: 0;
+/* Notice Box CSS */
+
+.notice-box {
+  background-color: #9de1fe;
+  padding: 13px 12px 14px 13px;
+  min-height: 62px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #2b3940;
+}
+
+.notice-box i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.notice-box a {
+  color: #384c56;
 }
 
 .contact {
+  background-color: #fff;
+  padding: 0;
+  max-height: 76px;
+}
+
+.contacts-list {
+  padding: 0;
+}
+
+.contacts-list {
   border-style: dashed;
   border-color: black;
   border: 1;
   height: 60px;
 }
 
+.contact-info {
+  font-size: 48px;
+}
+
+.contact-name {
+  color: rgba(0,0,0,.6);
+}
+
 /* RIGHT COLUMN CSS */
 
 .message-screen {
-  min-height: 300px;
+  min-height: 400px;
+  background-image: url(/img/whatsapp-chat-background.jpg);
+  background-size: cover;
+}
+
+.message-header {
+  background-color: #eee;
+}
+
+.message-column {
+  padding: 0;
+  background-color: #eee;
 }
 
 /* Media Q */

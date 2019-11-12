@@ -1,82 +1,201 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
 
-      <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <title></title>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- Layout uses Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <div class="container-fluid">     <!--  Full Body Container -->
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <div class="row app">
-            <div class="col-xs-5 user-column">  <!--  Column w/ Header + Contacts-->
-              <div class="col-xs-12 header">
+<body>
 
-              </div>
-              <div class="col-xs-12 header-searchbar">
-
-              </div>
-              <div class="col-xs-12 contacts-list">
-                <div class="col-xs-12 contact">
+  <!-- Layout uses Bootstrap -->
 
 
+  <div class="container-fluid">
+    <!--  Full Body Container -->
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 app">
+        <div class="row">
+          <div class="col-xs-5 user-column">
+            <!--  Column w/ Header + Contacts-->
+            <div class="col-xs-12 header">
+              <div class="row">
+                <div class="col-xs-2 header-usericon">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-12 contact">
-
-
+                <div class="col-xs-1 col-md-offset-5 header-icons">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-12 contact">
-
-
+                <div class="col-xs-1 header-icons">
+                  <i class="fa fa-comment "></i>
                 </div>
-                <div class="col-xs-12 contact">
-
-
-                </div>
-                <div class="col-xs-12 contact">
-
-
+                <div class="col-xs-1 header-icons">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
               </div>
-
-            </div>                              <!--  End of Column w/ Contacts-->
-            <div class="col-xs-7 message-column">  <!--  Column with Messages -->
-              <div class="col-xs-12 header-message contact">
-
-
+            </div>
+            <div class="col-xs-12 notice-box">
+              <!-- Row with Blue Notice Box -->
+              <div class="col-xs-2">
+                <i class="fa fa-bell-slash" aria-hidden="true"></i>
               </div>
-              <div class="col-xs-12 message-screen contact">
-
-
+              <div class="col-xs-10 alert-icon">
+                <span>
+                  <p>Ricevi notifiche di nuovi messaggi</p>
+                </span>
+                <span>
+                  <a href="#">Attiva Notifiche Desktop ></a>
+                </span>
               </div>
-              <div class="col-xs-12 message-input contact">
 
+            </div>
 
+            <div class="col-xs-12 header-searchbar">
+
+            </div>
+
+              <div class="col-xs-12 contact">
+                  <div class="col-xs-2 contact-info">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-8 contact-name">
+                    <span>
+                      <p>Marco</p>
+                    </span>
+                    <span>
+                      <p>This will be the last comment</p>
+                    </span>
+                  </div>
+                  <div class="col-xs-2 contact-time">
+                    <span>
+                      <p>13:12</p>
+                    </span>
+                  </div>
               </div>
-            </div>                              <!--  End of Column w/ Messages -->
-          </div>
 
+                <div class="col-xs-12 contact">
+                    <div class="col-xs-2 contact-info">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8 contact-name">
+                      <span>
+                        <p>Marco</p>
+                      </span>
+                      <span>
+                        <p>This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-xs-2 contact-time">
+                      <span>
+                        <p>13:12</p>
+                      </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 contact">
+                    <div class="col-xs-2 contact-info">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8 contact-name">
+                      <span>
+                        <p>Marco</p>
+                      </span>
+                      <span>
+                        <p>This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-xs-2 contact-time">
+                      <span>
+                        <p>13:12</p>
+                      </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 contact">
+                    <div class="col-xs-2 contact-info">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8 contact-name">
+                      <span>
+                        <p>Marco</p>
+                      </span>
+                      <span>
+                        <p>This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-xs-2 contact-time">
+                      <span>
+                        <p>13:12</p>
+                      </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 contact">
+                    <div class="col-xs-2 contact-info">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8 contact-name">
+                      <span>
+                        <p>Marco</p>
+                      </span>
+                      <span>
+                        <p>This will be the last comment</p>
+                      </span>
+                    </div>
+                    <div class="col-xs-2 contact-time">
+                      <span>
+                        <p>13:12</p>
+                      </span>
+                    </div>
+                </div>
+
+
+
+          </div> <!--  End of Column w/ Contacts-->
+          <div class="col-xs-7 message-column">        <!--  Column with Messages -->
+
+            <div class="col-xs-12 header-message message-header">
+              <div class="col-xs-2 contact-info">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </div>
+              <div class="col-xs-8 contact-name">
+                <span>
+                  <p>Marco</p>
+                </span>
+                <span>
+                  <p>This will be the last comment</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="col-xs-12 message-screen">
+
+
+            </div>
+            <div class="col-xs-12 message-input message-input">
+
+
+            </div>
+          </div> <!--  End of Column w/ Messages -->
         </div>
+
       </div>
+    </div>
 
 
-    </div>     <!--  End of Full Body Container -->
+  </div> <!--  End of Full Body Container -->
 
-    <script src="assets/js/master.js" charset="utf-8"></script>
-  </body>
+  <script src="assets/js/master.js" charset="utf-8"></script>
+</body>
+
 </html>
