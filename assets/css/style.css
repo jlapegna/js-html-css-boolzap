@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  background: linear-gradient( #009688 0%, #009688 15%, #D8DBD7 15%, #D8DBD7 100%);
+  background: linear-gradient(#009688 0%, #009688 15%, #D8DBD7 15%, #D8DBD7 100%);
   height: 100%;
   width: 100%;
 }
@@ -24,8 +24,10 @@ textarea:focus, input:focus {
 
 /* LEFT COLUMN CSS */
 .app {
+  height: 600px;
   margin-top: 40px;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .user-column {
@@ -111,7 +113,6 @@ textarea:focus, input:focus {
 }
 
 /* RIGHT COLUMN CSS */
-
 .message-column {
   height: 600px;
   padding: 0;
@@ -134,7 +135,6 @@ textarea:focus, input:focus {
 }
 
 /* User Input  */
-
 .message-input {
   height: 14%;
   background-color: #e5ded3;
@@ -168,7 +168,7 @@ textarea:focus, input:focus {
   padding: 6px 7px 8px 9px;
   border-top-right-radius: 0;
   background-color: #dcf8c6;
-  box-shadow: 0 1px 0.5px rgba(0,0,0,.13);
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
   border-radius: 7.5px;
 }
 

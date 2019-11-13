@@ -1,8 +1,8 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
-// When the airplance icon (send button) is clicked the function is called
+  // When the airplance icon (send button) is clicked the function is called
 
-  $(".submit-button").click(function(){
+  $(".submit-button").click(function() {
 
     // We save whatever the user wants to send as a message
     var userText = $(".message").val();
@@ -22,6 +22,12 @@ $( document ).ready(function() {
     // This passes an empty string into the message input to clear it
 
     $(".message").val("");
+
+// Current Time
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes();
+
+    console.log(time);
 
 
   })
