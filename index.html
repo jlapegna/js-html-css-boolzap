@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title></title>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -21,16 +24,11 @@
 
 <body>
 
-  <!-- Layout uses Bootstrap -->
+  <div class="container-fluid wrapper">   <!--  Full Body Container -->
 
-
-  <div class="container-fluid">
-    <!--  Full Body Container -->
-    <div class="row app">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 max-height">
-        <div class="row">
-          <div class="col-xs-5 user-column">
-            <!--  Column w/ Header + Contacts-->
+    <div class="row app max-height"> <!-- Row that contains to main columns -->
+          <!--  Column w/ Header + Contacts-->
+          <div class="col-xs-4 col-xs-offset-1 user-column">
             <div class="col-xs-12 header">
               <div class="row">
                 <div class="col-xs-2 header-usericon">
@@ -60,133 +58,179 @@
                   <a href="#">Attiva Notifiche Desktop ></a>
                 </span>
               </div>
-
             </div>
-
+        <!-- Search Contacts  -->
             <div class="col-xs-12 header-searchbar">
 
             </div>
+        <!-- End of Search Contacts -->
+
+      <!-- List of Contacts -->
+          <div class="container-fluid">
+            <div class="row contacts-row">
 
               <div class="col-xs-12 contact">
-                  <div class="col-xs-2 contact-info">
+                  <div class="col-xs-2 contact-info padding-box">
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
                   </div>
-                  <div class="col-xs-8 contact-name">
+                  <div class="col-xs-7 contact-name">
                     <span>
                       <p>Robin Hood</p>
                     </span>
                     <span>
-                      <p>This will be the last comment</p>
+                      <p class="message-font">This will be the last comment</p>
                     </span>
                   </div>
-                  <div class="col-xs-2 contact-time">
+                  <div class="col-xs-2 padding-box ">
                     <span>
                       <p>13:12</p>
                     </span>
                   </div>
               </div>
 
-                <div class="col-xs-12 contact">
-                    <div class="col-xs-2 contact-info padding-box">
-                      <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-name padding-box">
-                      <span>
-                        <p>Maid Marian</p>
-                      </span>
-                      <span>
-                        <p>This will be the last comment</p>
-                      </span>
-                    </div>
-                    <div class="col-xs-2 contact-time padding-box">
-                      <span>
-                        <p>13:12</p>
-                      </span>
-                    </div>
+              <div class="col-xs-12 contact">
+                  <div class="col-xs-2 contact-info padding-box">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-xs-7 contact-name">
+                    <span>
+                      <p>Robin Hood</p>
+                    </span>
+                    <span>
+                      <p class="message-font">This will be the last comment</p>
+                    </span>
+                  </div>
+                  <div class="col-xs-2 padding-box ">
+                    <span>
+                      <p>13:12</p>
+                    </span>
+                  </div>
+              </div>
+
+
+              <div class="col-xs-12 contact">
+                <div class="col-xs-2 contact-info padding-box">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
                 </div>
-                <div class="col-xs-12 contact">
-                    <div class="col-xs-2 contact-info padding-box">
-                      <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-name padding-box">
-                      <span>
-                        <p>Friar Tuck</p>
-                      </span>
-                      <span>
-                        <p>This will be the last comment</p>
-                      </span>
-                    </div>
-                    <div class="col-xs-2 contact-time padding-box">
-                      <span>
-                        <p>13:12</p>
-                      </span>
-                    </div>
+                <div class="col-xs-7 contact-name padding-box">
+                  <span>
+                    <p>Maid Marian</p>
+                  </span>
+                  <span>
+                    <p class="message-font">This will be the last comment</p>
+                  </span>
                 </div>
-                <div class="col-xs-12 contact">
-                    <div class="col-xs-2 contact-info">
-                      <i class="fa fa-user-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-xs-8 contact-name padding-box">
-                      <span>
-                        <p>Little John</p>
-                      </span>
-                      <span>
-                        <p>This will be the last comment</p>
-                      </span>
-                    </div>
-                    <div class="col-xs-2 contact-time padding-box">
-                      <span>
-                        <p>13:12</p>
-                      </span>
-                    </div>
+                <div class="col-xs-2 contact-time padding-box">
+                  <span>
+                    <p>13:12</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 contact">
+                <div class="col-xs-2 contact-info padding-box">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-7 contact-name padding-box">
+                  <span>
+                    <p>Friar Tuck</p>
+                  </span>
+                  <span>
+                    <p class="message-font">This will be the last comment</p>
+                  </span>
+                </div>
+                <div class="col-xs-2 contact-time padding-box">
+                  <span>
+                    <p>13:12</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 contact">
+                <div class="col-xs-2 contact-info padding-box">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="col-xs-7 contact-name padding-box">
+                  <span>
+                    <p>Little John</p>
+                  </span>
+                  <span>
+                    <p class="message-font">This will be the last comment</p>
+                  </span>
+                </div>
+                <div class="col-xs-2 contact-time padding-box">
+                  <span>
+                    <p>13:12</p>
+                  </span>
                 </div>
 
-          </div> <!--  End of Column w/ Contacts-->
-          <div class="col-xs-7 message-column">        <!--  Column with Messages -->
+              <!-- End of Contacts -->
+              </div>
+            </div>
+          </div>
+        </div> <!--  End of Column w/ Contacts-->
+
+      <!--  Column with Messages -->
+          <div class="col-xs-6 message-column">
 
             <div class="col-xs-12 message-header">
               <div class="col-xs-2 contact-info">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
               </div>
-              <div class="col-xs-8 contact-name">
+              <div class="col-xs-5 contact-name padding-box">
                 <span>
                   <p>Marco</p>
                 </span>
-                <span>
-                  <p>This will be the last comment</p>
-                </span>
               </div>
+              <div class="col-xs-1 col-xs-offset-1 padding-box header-icons">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </div>
+              <div class="col-xs-1 padding-box header-icons">
+                <i class="fa fa-paperclip" aria-hidden="true"></i>
+              </div>
+              <div class="col-xs-1 padding-box header-icons">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              </div>
+
             </div>
 
-            <div class="col-xs-12 message-screen">
+        <!--  Where the User Chat appears-->
+            <div class="col-xs-12 message-screen msgsent-font">
 
 
             </div>
 
             <div class="col-xs-12 message-input message-input">
-              <div class="col-xs-1 padding-box">
-                <i class="fa fa-smile-o" aria-hidden="true"></i>
-              </div>
-              <div class="col-xs-10 contact-name padding-box">
-                <div class="message-field">
-                  <div class="written-message">
-                    Write a message.
-                  </div>
+              <div class="row">
+                <div class="col-xs-1 user-submit">
+                  <i class="fa fa-smile-o" aria-hidden="true"></i>
                 </div>
-              </div>
-              <div class="col-xs-1 contact-time padding-box">
-                <i class="fa fa-microphone" aria-hidden="true"></i>
-              </div>
+                <div class="col-xs-9 contact-name padding-box">
+                  <input type="text" class="message message-field">
+
+                </div>
+                <div class="col-xs-1 user-submit">
+                  <button class="submit-button">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  </button>
+                </div>
 
             </div>
           </div> <!--  End of Column w/ Messages -->
-        </div>
 
+
+    </div>
+  </div>  <!--  End of Full Body Container -->
+
+
+    <!-- Hidden DIV for JS -->
+    <div id="template">
+      <div class='msgsent'>
+        <span class="testo"></span>
       </div>
     </div>
 
 
-  </div> <!--  End of Full Body Container -->
 
   <script src="assets/js/master.js" charset="utf-8"></script>
 </body>
