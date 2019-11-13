@@ -42,10 +42,6 @@ textarea:focus, input:focus {
   max-height: 72px;
 }
 
-.header-usericon i {
-  font-size: 42px;
-}
-
 .header-icons {
   font-size: 22px;
   padding: 20px 20px 20px 20px;
@@ -99,10 +95,6 @@ textarea:focus, input:focus {
   height: 60px;
 }
 
-.contact-info {
-  font-size: 48px;
-}
-
 .contact-name {
   font-size: 18px;
   color: black;
@@ -121,6 +113,7 @@ textarea:focus, input:focus {
 
 .message-header {
   height: 12%;
+  padding: 10px;
   background-color: #efefef;
   border-left: 1px solid rgba(0, 0, 0, .08);
 }
@@ -165,11 +158,25 @@ textarea:focus, input:focus {
 .msgsent-style {
   max-width: 60px;
   float: right;
+  clear: both;
   padding: 6px 7px 8px 9px;
   border-top-right-radius: 0;
   background-color: #dcf8c6;
   box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
   border-radius: 7.5px;
+  margin-top: 10px;
+}
+
+.msgrecieved-style {
+  max-width: 60px;
+  float: left;
+  clear: both;
+  padding: 6px 7px 8px 9px;
+  border-top-right-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+  border-radius: 7.5px;
+  margin-top: 10px;
 }
 
 .msgsent-font {
