@@ -2,9 +2,9 @@
 
 ## Goal
 
-Recreate a copy of the WhatsApp web app with JQuery. The project will be completed in three milestones.
+Recreate a functioning clone of the WhatsApp web app (https://web.whatsapp.com/) with JQuery. The project will be completed in three milestones.
 
-![alt text](https://github.com/jlapegna/js-pokedex-api/blob/master/img/milestones.png?raw=true)
+![alt text](https://github.com/jlapegna/js-html-css-boolzap/blob/master/img/milestones.png?raw=true)
 
 
 ## Key Concepts
